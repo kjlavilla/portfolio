@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">My Portfolio</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#experience">Work Experience</a></li>
+      <li><a href="#experience">Certification</a></li>
+      <li><a href="#experience">Leadership</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+  </nav>
+
+  <section class="hero">
+  <div class="hero-img">
+    <img src="photo.png" alt="Hero Image">
+  </div>
+  <div class="hero-text">
+    <h1>Hello, I'm Kylle.</h1>
+    <p>A passionate IT Specialist and Data Analyst.</p>
+    <a href="#projects" class="btn">See More</a>
+  </div>
+</section>
+
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
