@@ -9,31 +9,32 @@
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="logo">My Portfolio</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#experience">Work Experience</a></li>
-      <li><a href="#experience">Certification</a></li>
-      <li><a href="#experience">Leadership</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger">
-      ☰
-    </div>
-  </nav>
-
-  <section class="hero">
-  <div class="hero-img">
-    <img src="photo.png" alt="Hero Image">
+  <div class="navbar-wrapper">
+    <nav class="navbar">
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#experience">Work Experience</a></li>
+        <li><a href="#experience">Certification</a></li>
+        <li><a href="#experience">Leadership</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">☰</div>
+    </nav>
   </div>
-  <div class="hero-text">
-    <h1>Hello, I'm Kylle.</h1>
-    <p>A passionate IT Specialist and Data Analyst.</p>
-    <a href="#projects" class="btn">See More</a>
-  </div>
-</section>
 
+  <main id="home" class="content">
+    <section class="hero">
+      <div class="hero-img">
+        <img src="images/photo.png" alt="Hero Image">
+      </div>
+      <div class="hero-text">
+        <h1>Hello, I'm Kylle.</h1>
+        <p>A passionate IT Specialist and Data Analyst.</p>
+        <a href="#projects" class="btn">See More</a>
+      </div>
+    </section>
+  </main>
 
   <script>
     const hamburger = document.getElementById('hamburger');
@@ -41,7 +42,15 @@
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
-  </script>
 
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 10) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>
