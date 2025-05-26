@@ -17,7 +17,7 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About Me</a></li>
         <li><a href="#experience">Work Experience</a></li>
-        <li><a href="#experience">Certification</a></li>
+        <li><a href="#certification">Certification</a></li>
         <li><a href="#experience">Leadership</a></li>
       </ul>
       <div class="hamburger" id="hamburger">☰</div>
@@ -48,9 +48,49 @@
           I've been hooked ever since.</p>
         </div>
       </div>
-
     </section>
 
+  <div class="skills-container">
+  <h2>Technical Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-name">Network Configuration & Troubleshooting</div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-name">Data Analysis & Visualization</div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-name">SQL & Database Management</div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-name">Hardware & Software Installation and Maintenance</div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-name">Network Security Fundamentals</div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-name">CCTV Installation & Configuration</div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-name">Google Workspace & Microsoft 365</div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-name">Technical Support & Help Desk</div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-name">IT Documentation & Reporting</div>
+    </div>
+  </div>
+</div>
 
   <section id="experience" class="experience-section">
   <h2>Work <span class="highlight">Experience</span></h2>
@@ -100,6 +140,116 @@
   </div>
 </section>
 
+<section id="certification" class="certifications-section">
+    <h2>My <span class="highlight">Certifications</span></h2>
+    
+    <div class="certifications-grid">
+      <!-- Certification Cards -->
+      <!-- Card 1 -->
+      <div class="certification-card" onclick="toggleCertification(this)">
+        <div class="card-front">
+          <img src="images/photo.png" alt="Google Data Analytics" class="certification-image">
+          <h3 class="certification-title">Google Data Analytics</h3>
+          <span class="certification-date">Acquired: June 2022</span>
+        </div>
+        <div class="card-back">
+          <button class="close-btn" onclick="event.stopPropagation(); toggleCertification(this.parentElement.parentElement)">×</button>
+          <h3 class="certification-title">Google Data Analytics Professional Certificate</h3>
+          <p class="certification-issuer">Issued by: Google</p>
+          <p class="certification-details">
+            This certification covers the entire data analysis process including data cleaning, analysis, visualization, and tools like spreadsheets, SQL, R programming, and Tableau.
+          </p>
+          <span class="certification-date">Completed: June 2022</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="certification-card" onclick="toggleCertification(this)">
+        <div class="card-front">
+          <img src="images/photo.png" alt="AWS Certified" class="certification-image">
+          <h3 class="certification-title">AWS Certified Solutions Architect</h3>
+          <span class="certification-date">Acquired: March 2023</span>
+        </div>
+        <div class="card-back">
+          <button class="close-btn" onclick="event.stopPropagation(); toggleCertification(this.parentElement.parentElement)">×</button>
+          <h3 class="certification-title">AWS Certified Solutions Architect - Associate</h3>
+          <p class="certification-issuer">Issued by: Amazon Web Services</p>
+          <p class="certification-details">
+            Demonstrates ability to design and deploy scalable, highly available, and fault-tolerant systems on AWS. Covers architecture best practices and AWS services.
+          </p>
+          <span class="certification-date">Completed: March 2023</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="certification-card" onclick="toggleCertification(this)">
+        <div class="card-front">
+          <img src="images/photo.png" alt="Microsoft Certified" class="certification-image">
+          <h3 class="certification-title">Microsoft Certified: Azure Administrator</h3>
+          <span class="certification-date">Acquired: November 2022</span>
+        </div>
+        <div class="card-back">
+          <button class="close-btn" onclick="event.stopPropagation(); toggleCertification(this.parentElement.parentElement)">×</button>
+          <h3 class="certification-title">Microsoft Certified: Azure Administrator Associate</h3>
+          <p class="certification-issuer">Issued by: Microsoft</p>
+          <p class="certification-details">
+            Validates skills in implementing, managing, and monitoring identity, governance, storage, compute, and virtual networks in a cloud environment.
+          </p>
+          <span class="certification-date">Completed: November 2022</span>
+        </div>
+      </div>
+
+            <div class="certification-card" onclick="toggleCertification(this)">
+        <div class="card-front">
+          <img src="images/photo.png" alt="Microsoft Certified" class="certification-image">
+          <h3 class="certification-title">Microsoft Certified: Azure Administrator</h3>
+          <span class="certification-date">Acquired: November 2022</span>
+        </div>
+        <div class="card-back">
+          <button class="close-btn" onclick="event.stopPropagation(); toggleCertification(this.parentElement.parentElement)">×</button>
+          <h3 class="certification-title">Microsoft Certified: Azure Administrator Associate</h3>
+          <p class="certification-issuer">Issued by: Microsoft</p>
+          <p class="certification-details">
+            Validates skills in implementing, managing, and monitoring identity, governance, storage, compute, and virtual networks in a cloud environment.
+          </p>
+          <span class="certification-date">Completed: November 2022</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="education-section">
+  <h2 class="section-title">Education</h2>
+
+  <div class="education-card">
+    <div class="education-item">
+      <img src="images/photo.png" alt="University Logo" class="edu-logo">
+      <div class="edu-details">
+        <h3 class="school-name">University of Tech</h3>
+        <p class="program">Bachelor of Science in Information Technology</p>
+        <p class="year">Graduated: 2023</p>
+        <p class="description">
+          Specialized in systems development, cloud architecture, and networking. Completed real-world projects and a capstone thesis.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="education-card">
+    <div class="education-item">
+      <img src="images/photo.png" alt="Senior High Logo" class="edu-logo">
+      <div class="edu-details">
+        <h3 class="school-name">Senior High Institute</h3>
+        <p class="program">STEM – Computer Systems Servicing</p>
+        <p class="year">Graduated: 2020</p>
+        <p class="description">
+          Focused on technical IT skills, hardware/software servicing, and passed the NCII certification for Computer Systems Servicing.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
   <script>
     // Same as your main page
     const hamburger = document.getElementById('hamburger');
@@ -114,6 +264,23 @@
         navbar.classList.add('scrolled');
       } else {
         navbar.classList.remove('scrolled');
+      }
+    });
+
+    function toggleCertification(card) {
+      document.querySelectorAll('.certification-card.active').forEach(openCard => {
+        if (openCard !== card) {
+          openCard.classList.remove('active');
+        }
+      });
+      card.classList.toggle('active');
+    }
+
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.certification-card')) {
+        document.querySelectorAll('.certification-card.active').forEach(card => {
+          card.classList.remove('active');
+        });
       }
     });
 
