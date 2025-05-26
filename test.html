@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
   <div class="navbar-wrapper">
     <nav class="navbar">
-      <div><a href="#home" style="text-decoration:none" class="logo">K J L</a></div>
+      <div class="logo"><a href="home">My Portfolio</a></div>
       <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#experience">Work Experience</a></li>
         <li><a href="#experience">Certification</a></li>
@@ -32,24 +31,12 @@
       <div class="hero-text">
         <h1>Hello, I'm Kylle.</h1>
         <p>A passionate IT Specialist and Data Analyst.</p>
-        <a href="#about" class="btn">See More</a>
+        <a href="#projects" class="btn">See More</a>
       </div>
     </section>
   </main>
 
-  <main id="about" class="about-container">
-    <!-- About Hero Section -->
-    <section class="about-hero">
-      <div class="about-hero-content">
-        <h1>About <span class="highlight2">Me</span></h1>
-        <p class="subtitle">I'm Kylle, a passionate IT Specialist and Data Analyst with 5 years of experience helping businesses leverage
-          technology to solve complex problems. My journey in tech began when I built my first website at age 14, and
-          I've been hooked ever since.</p>
-      </div>
-    </section>
-
   <script>
-    // Same as your main page
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
     hamburger.addEventListener('click', () => {
@@ -64,8 +51,6 @@
         navbar.classList.remove('scrolled');
       }
     });
-
   </script>
 </body>
-
 </html>
