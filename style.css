@@ -509,10 +509,9 @@ body {
 .experience-section h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--darkgray);
+  color: var(--black);
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--dirtywhite);
   text-align: center;
 }
 
@@ -642,9 +641,11 @@ body {
 .certifications-section h2 {
   font-size: 2.5rem;
   font-weight: 700;
+  color: var(--darkgray);
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--dirtywhite);
   text-align: center;
-  margin-bottom: 2.5rem;
-  color: var(--black);
 }
 
 .highlight {
@@ -844,7 +845,7 @@ body {
 /* Responsive Adjustments for Small Screens */
 @media (max-width: 768px) {
   .certifications-section h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
   }
 
@@ -863,7 +864,7 @@ body {
 
 @media (max-width: 480px) {
   .certifications-section h2 {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
   }
 
   .certification-image {
