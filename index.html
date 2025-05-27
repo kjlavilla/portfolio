@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kylle Jasper Lavilla</title>
+  <link rel="icon" href="images/logo.svg">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 
@@ -13,7 +15,7 @@
 
   <div class="navbar-wrapper">
     <nav class="navbar">
-      <div><a href="#home" style="text-decoration:none" class="logo">K J L</a></div>
+      <div><a href="#home" style="text-decoration:none" class="logo">KJL.</a></div>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About Me</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -350,22 +352,68 @@
       </section>
     </div>
 
+  <footer class="site-footer">
+  <div class="footer-content">
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <a href="https://www.facebook.com/kyll.jspr" target="_blank" rel="noopener noreferrer" class="social-btn">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/kyll.jspr" target="_blank" rel="noopener noreferrer" class="social-btn">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.x.com/kyll_jspr" target="_blank" rel="noopener noreferrer" class="social-btn">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/kyllejasperlavilla" target="_blank" rel="noopener noreferrer" class="social-btn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+    </div>
+    
+    <!-- Credits -->
+    <div class="footer-credits">
+      <p>&copy; 2025 KJL. All rights reserved.</p>
+    </div>
+  </div>
+  </footer>
+
     <script>
+
+      window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 10) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+      });
+
       // Same as your main page
       const hamburger = document.getElementById('hamburger');
       const navLinks = document.getElementById('navLinks');
+      const navItems = navLinks.querySelectorAll('a'); // select all links inside nav
+
+      // Toggle menu on hamburger click
       hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
       });
 
-      window.addEventListener('scroll', () => {
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 10) {
-          navbar.classList.add('scrolled');
-        } else {
-          navbar.classList.remove('scrolled');
-        }
+      // Close menu after clicking a nav link
+      navItems.forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        });
       });
+
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 10) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
 
       function toggleCertification(card) {
         document.querySelectorAll('.certification-card.active').forEach(openCard => {
