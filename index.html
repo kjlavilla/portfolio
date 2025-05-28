@@ -196,7 +196,7 @@
         <div class="certification-card" onclick="toggleCertification(this)">
           <div class="card-front">
             <div class="certification-image-wrapper" onclick="openFullscreen(this)">
-            <img src="images/photo.png" alt="TESDA Creative Web Design" class="certification-image"></div>
+            <img src="images/Cert_Webdev.jpg" alt="TESDA Creative Web Design" class="certification-image"></div>
             <h3 class="certification-title">TESDA - Creative Web Design</h3>
             <span class="certification-date">Acquired: October 2021</span>
           </div>
@@ -204,7 +204,7 @@
             <button class="close-btn"
               onclick="event.stopPropagation(); toggleCertification(this.parentElement.parentElement)">x</button>
             <h3 class="certification-title">Creative Web Design</h3>
-            <p class="certification-issuer">Issued by: TESDA</p>
+            <p class="certification-issuer">Issued by: TESDA & MINDTECH Institute</p>
             <p class="certification-details">
               This certification covers the fundamentals of creative web design including layout principles, color
               theory, typography, responsive design, and hands-on experience with HTML, CSS, and Adobe Photoshop.
@@ -433,27 +433,30 @@
       });
 
       function openFullscreen(wrapper) {
-      const imgSrc = wrapper.querySelector('img').src;
+        const card = wrapper.closest('.certification-card'); // ⬅️ Get the parent card
+        if (card) toggleCertification(card); // ⬅️ Trigger flip on image click
 
-      // Create overlay div
-      const overlay = document.createElement('div');
-      overlay.classList.add('fullscreen-overlay');
+        const imgSrc = wrapper.querySelector('img').src;
 
-      // Create fullscreen img element
-      const fullscreenImg = document.createElement('img');
-      fullscreenImg.src = imgSrc;
+        // Create overlay div
+        const overlay = document.createElement('div');
+        overlay.classList.add('fullscreen-overlay');
 
-      // Append image to overlay
-      overlay.appendChild(fullscreenImg);
+        // Create fullscreen img element
+        const fullscreenImg = document.createElement('img');
+        fullscreenImg.src = imgSrc;
 
-      // Append overlay to body
-      document.body.appendChild(overlay);
+        // Append image to overlay
+        overlay.appendChild(fullscreenImg);
 
-      // Close fullscreen on click anywhere on overlay
-      overlay.addEventListener('click', () => {
-        document.body.removeChild(overlay);
-      });
-    }
+        // Append overlay to body
+        document.body.appendChild(overlay);
+
+        // Close fullscreen on click anywhere on overlay
+        overlay.addEventListener('click', () => {
+          document.body.removeChild(overlay);
+        });
+      }
 
     </script>
 </body>
