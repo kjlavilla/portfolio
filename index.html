@@ -7,6 +7,7 @@
   <title>Kylle Jasper Lavilla</title>
   <link rel="icon" href="images/logo.svg">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
@@ -30,7 +31,7 @@
 
   <!-- HERO / LANDING PAGE -->
   <main id="home" class="content">
-    <section class="hero">
+    <section class="hero fade-in">
       <div class="hero-img">
         <img src="images/photo.png" alt="Hero Image">
       </div>
@@ -50,7 +51,7 @@
 
   <!-- ABOUT ME SECTION -->
   <main id="about" class="about-container">
-    <section class="about-box">
+    <section class="about-box fade-in">
       <div class="about-hero">
         <div class="about-hero-content">
           <h1>About Me</h1>
@@ -67,28 +68,28 @@
 
 
   <!-- SKILLS / CORE COMPETENCIES SECTION -->
-    <section id="skills">
-      <h1>Technical Skills / <span class="highlight"> Core Competencies</span></h1>
-      <div class="skills-grid">
-        <div class="skill-box">Network Configuration & Troubleshooting</div>
-        <div class="skill-box">Data Analysis & Visualization</div>
-        <div class="skill-box">SQL & Database Management</div>
-        <div class="skill-box">Hardware & Software Installation and Maintenance</div>
-        <div class="skill-box">Network Security Fundamentals</div>
-        <div class="skill-box">CCTV Installation & Configuration</div>
-        <div class="skill-box">Google Workspace & Microsoft 365</div>
-        <div class="skill-box">Technical Support & Help Desk</div>
-        <div class="skill-box">IT Documentation & Reporting</div>
+    <section id="skills" class="fade-in">
+      <h1>Technical Skills / <span class="highlight fade-in"> Core Competencies</span></h1>
+      <div class="skills-grid fade-in">
+        <div class="skill-box fade-in">Network Configuration & Troubleshooting</div>
+        <div class="skill-box fade-in">Data Analysis & Visualization</div>
+        <div class="skill-box fade-in">SQL & Database Management</div>
+        <div class="skill-box fade-in">Hardware & Software Installation and Maintenance</div>
+        <div class="skill-box fade-in">Network Security Fundamentals</div>
+        <div class="skill-box fade-in">CCTV Installation & Configuration</div>
+        <div class="skill-box fade-in">Google Workspace & Microsoft 365</div>
+        <div class="skill-box fade-in">Technical Support & Help Desk</div>
+        <div class="skill-box fade-in">IT Documentation & Reporting</div>
       </div>
     </section>
 
-    <section id="experience" class="experience-section">
-      <h2>Work <span class="highlight">Experience</span></h2>
-      <div class="timeline">
+    <section id="experience" class="experience-section fade-in">
+      <h2>Work <span class="highlight fade-in">Experience</span></h2>
+      <div class="timeline fade-in">
         <!-- Timeline Item 1 -->
-        <div class="timeline-item">
-          <div class="timeline-date">February - May 2025</div>
-          <div class="timeline-content">
+        <div class="timeline-item fade-in">
+          <div class="timeline-date fade-in">February - May 2025</div>
+          <div class="timeline-content fade-in">
             <h3>MIS - IT Specialist and Analyst Intern</h3>
             <h4>Forever Flawless Body And Center Inc.</h4>
             <ul>
@@ -113,9 +114,9 @@
           </div>
         </div>
         <!-- Timeline Item 2 -->
-        <div class="timeline-item">
-          <div class="timeline-date">August - September 2021</div>
-          <div class="timeline-content">
+        <div class="timeline-item fade-in">
+          <div class="timeline-date fade-in">August - September 2021</div>
+          <div class="timeline-content fade-in">
             <h3>Web Developer Intern</h3>
             <h4>TESDA - Creative Web Design</h4>
             <ul>
@@ -126,9 +127,9 @@
           </div>
         </div>
         <!-- Timeline Item 3 -->
-        <div class="timeline-item">
-          <div class="timeline-date">January - February 2021</div>
-          <div class="timeline-content">
+        <div class="timeline-item fade-in">
+          <div class="timeline-date fade-in">January - February 2021</div>
+          <div class="timeline-content fade-in">
             <h3>Computer Systems Servicing NCII</h3>
             <h4>TESDA - Joint Delivery Voucher Program</h4>
             <ul>
@@ -145,25 +146,25 @@
     </section>
 
     <!-- CERTIFICATION SECTION -->
-    <section id="certification" class="certifications-section">
+    <section id="certification" class="certifications-section fade-in">
       <h2>Certifications</h2>
 
-      <div class="certifications-grid">
+      <div class="certifications-grid fade-in">
         <!-- Certification Cards -->
         <!-- Card 1 -->
-        <div class="certification-card" onclick="toggleCertification(this)">
-          <div class="card-front">
-            <div class="certification-image-wrapper" onclick="openFullscreen(this)">
+        <div class="certification-card fade-in" onclick="toggleCertification(this)">
+          <div class="card-front fade-in">
+            <div class="certification-image-wrapper fade-in" onclick="openFullscreen(this)">
             <img src="images/NetAdd_Badge and_Cert-1.png" alt="Cisco Network Addressing" class="certification-image"></div>
-            <h3 class="certification-title">Cisco Networking Academy - Network Addressing & Basic Troubleshooting</h3>
+            <h3 class="certification-title fade-in">Cisco Networking Academy - Network Addressing & Basic Troubleshooting</h3>
             <span class="certification-date">Acquired: May 2025</span>
           </div>
           <div class="card-back">
             <button class="close-btn"
               onclick="event.stopPropagation(); toggleCertification(this.parentElement.parentElement)">x</button>
-            <h3 class="certification-title">Network Addressing & Basic Troubleshooting Badge</h3>
-            <p class="certification-issuer">Issued by: CISCO & DICT - ITU DTC</p>
-            <p class="certification-details">
+            <h3 class="certification-title fade-in">Network Addressing & Basic Troubleshooting Badge</h3>
+            <p class="certification-issuer fade-in">Issued by: CISCO & DICT - ITU DTC</p>
+            <p class="certification-details fade-in">
               This certification covers fundamental networking concepts including IP addressing, subnetting, and basic
               troubleshooting skills essential for maintaining and diagnosing network issues.
             </p>
@@ -171,71 +172,71 @@
           </div>
         </div>
         <!-- Card 2 -->
-        <div class="certification-card" onclick="toggleCertification(this)">
-          <div class="card-front">
-            <div class="certification-image-wrapper" onclick="openFullscreen(this)">
-            <img src="images/CiscoBadge_Cybersec-1.png" alt="Cisco Cybersecurity" class="certification-image"></div>
-            <h3 class="certification-title">Cisco Networking Academy - Introduction to Cybersecurity</h3>
+        <div class="certification-card fade-in" onclick="toggleCertification(this)">
+          <div class="card-front fade-in">
+            <div class="certification-image-wrapper fade-in" onclick="openFullscreen(this)">
+            <img src="images/CiscoBadge_Cybersec-1.png" alt="Cisco Cybersecurity" class="certification-image fade-in"></div>
+            <h3 class="certification-title fade-in">Cisco Networking Academy - Introduction to Cybersecurity</h3>
             <span class="certification-date">Acquired: April 2025</span>
           </div>
           <div class="card-back">
-            <button class="close-btn"
+            <button class="close-btn fade-in"
               onclick="event.stopPropagation(); toggleCertification(this.parentElement.parentElement)">x</button>
-            <h3 class="certification-title">Introduction to Cybersecurity Badge</h3>
-            <p class="certification-issuer">Issued by: CISCO & DICT - ITU DTC</p>
-            <p class="certification-details">
+            <h3 class="certification-title fade-in">Introduction to Cybersecurity Badge</h3>
+            <p class="certification-issuer fade-in">Issued by: CISCO & DICT - ITU DTC</p>
+            <p class="certification-details fade-in">
               This certification covers the essentials of cybersecurity including cyber threats, security principles,
               technologies, and the fundamentals of protecting data and networks in today's digital world.
             </p>
-            <span class="certification-date">Completed: April 2025</span>
+            <span class="certification-date fade-in">Completed: April 2025</span>
           </div>
         </div>
         <!-- Card 3 -->
-        <div class="certification-card" onclick="toggleCertification(this)">
+        <div class="certification-card fade-in" onclick="toggleCertification(this)">
           <div class="card-front">
-            <div class="certification-image-wrapper" onclick="openFullscreen(this)">
-            <img src="images/Cert_Webdev.jpg" alt="TESDA Creative Web Design" class="certification-image"></div>
+            <div class="certification-image-wrapper fade-in" onclick="openFullscreen(this)">
+            <img src="images/Cert_Webdev.jpg" alt="TESDA Creative Web Design" class="certification-image fade-in"></div>
             <h3 class="certification-title">TESDA - Creative Web Design</h3>
             <span class="certification-date">Acquired: October 2021</span>
           </div>
           <div class="card-back">
-            <button class="close-btn"
+            <button class="close-btn fade-in"
               onclick="event.stopPropagation(); toggleCertification(this.parentElement.parentElement)">x</button>
-            <h3 class="certification-title">Creative Web Design</h3>
-            <p class="certification-issuer">Issued by: TESDA & MINDTECH Institute</p>
-            <p class="certification-details">
+            <h3 class="certification-title fade-in">Creative Web Design</h3>
+            <p class="certification-issuer fade-in">Issued by: TESDA & MINDTECH Institute</p>
+            <p class="certification-details fade-in">
               This certification covers the fundamentals of creative web design including layout principles, color
               theory, typography, responsive design, and hands-on experience with HTML, CSS, and Adobe Photoshop.
             </p>
-            <span class="certification-date">Completed: October 2021</span>
+            <span class="certification-date fade-in">Completed: October 2021</span>
           </div>
         </div>
 
-        <div class="certification-card" onclick="toggleCertification(this)">
-          <div class="card-front">
-            <div class="certification-image-wrapper" onclick="openFullscreen(this)">
-            <img src="images/Cert_JDVP.png" alt="Cert JDVP" class="certification-image" /></div>
-            <h3 class="certification-title">TESDA - Computer Systems Servicing NCII</h3>
+        <div class="certification-card fade-in" onclick="toggleCertification(this)">
+          <div class="card-front fade-in">
+            <div class="certification-image-wrapper fade-in" onclick="openFullscreen(this)">
+            <img src="images/Cert_JDVP.png" alt="Cert JDVP" class="certification-image fade-in" /></div>
+            <h3 class="certification-title fade-in">TESDA - Computer Systems Servicing NCII</h3>
             <span class="certification-date">Acquired: February 2021</span>
           </div>
           <div class="card-back">
-            <button class="close-btn"
+            <button class="close-btn fade-in" 
               onclick="event.stopPropagation(); toggleCertification(this.parentElement.parentElement)">x</button>
-            <h3 class="certification-title">Computer Systems Servicing NCII</h3>
-            <p class="certification-issuer">Issued by: TESDA & Capellan Institute of Technology</p>
-            <p class="certification-details">
+            <h3 class="certification-title fade-in">Computer Systems Servicing NCII</h3>
+            <p class="certification-issuer fade-in">Issued by: TESDA & Capellan Institute of Technology</p>
+            <p class="certification-details fade-in">
               This certification covers the installation, configuration, maintenance, and repair of computer systems and
               networks, including hardware diagnostics, software troubleshooting, and basic networking based on TESDA's
               NCII standards.
             </p>
-            <span class="certification-date">Completed: February 2021</span>
+            <span class="certification-date fade-in">Completed: February 2021</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- EDUCATION SECTION -->
-    <section class="education-section">
+    <section class="education-section fade-in">
       <h2 class="section-title">Education</h2>
 
       <div class="education-card">
@@ -254,7 +255,7 @@
         </div>
       </div>
 
-      <div class="education-card">
+      <div class="education-card fade-in">
         <div class="education-item">
           <img src="images/rhs.png" alt="Senior High Logo" class="edu-logo">
           <div class="edu-details">
@@ -272,10 +273,10 @@
     </section>
 
     <!-- LEADERSHIP SECTION -->
-    <section id="leadership">
+    <section id="leadership" class="fade-in">
       <h2>Student Leadership</h2>
-      <div class="leadership-grid">
-        <div class="leadership-card">
+      <div class="leadership-grid fade-in">
+        <div class="leadership-card fade-in">
           <img src="images/lionsclub.jpg" alt="lions club logo" class="edu-logo">
           <h3>Board of Director</h3>
           <p class="org">PLP Campus Lions Club</p>
@@ -283,7 +284,7 @@
             upskilling.</p>
         </div>
 
-        <div class="leadership-card">
+        <div class="leadership-card fade-in">
           <img src="images/goldenz.jpg" alt="lions club logo" class="edu-logo">
           <h3>CC Service and Advocacy</h3>
           <p class="org">PLP Golden Z Club</p>
@@ -293,85 +294,85 @@
     </section>
 
     <!-- CONTACT ME SECTION -->
-    <div id="contact" class="contact-container">
-      <section class="contact-section">
-        <div class="contact-content">
-          <div class="contact-header">
+    <div id="contact" class="contact-container fade-in">
+      <section class="contact-section fade-in">
+        <div class="contact-content fade-in">
+          <div class="contact-header fade-in">
             <h2>Get In Touch</h2>
-            <div class="contact-info">
+            <div class="contact-info fade-in">
               <p>Got a tech challenge or data puzzle you want to solve? Reach out anytime—whether through the form or
                 directly—and let's explore solutions together.</p>
-              <div class="contact-details">
+              <div class="contact-details fade-in">
                 <div>
-                  <i class="fas fa-envelope"></i>
+                  <i class="fas fa-envelope fade-in"></i>
                   <span>lavillakylle@gmail.com</span>
                 </div>
                 <div>
-                  <i class="fas fa-phone"></i>
+                  <i class="fas fa-phone fade-in"></i>
                   <span>+63 928 685 6214</span>
                 </div>
                 <div>
-                  <i class="fas fa-map-marker-alt"></i>
+                  <i class="fas fa-map-marker-alt fade-in"></i>
                   <span>Pasig City, PH</span>
                 </div>
               </div>
             </div>
           </div>
 
-      <form class="contact-form" method="POST" data-netlify="true" name="contact">
-        <div class="form-row">
-          <div class="form-group">
+      <form class="contact-form fade-in" method="POST" data-netlify="true" name="contact">
+        <div class="form-row fade-in">
+          <div class="form-group fade-in">
             <label for="firstname">First Name</label>
             <input type="text" id="firstname" name="firstname" required>
           </div>
-          <div class="form-group">
+          <div class="form-group fade-in">
             <label for="lastname">Last Name</label>
             <input type="text" id="lastname" name="lastname" required>
           </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group fade-in">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required>
         </div>
 
-        <div class="form-group">
+        <div class="form-group fade-in">
           <label for="subject">Subject</label>
           <input type="text" id="subject" name="subject" required>
         </div>
 
-        <div class="form-group">
+        <div class="form-group fade-in">
           <label for="message">Message</label>
           <textarea id="message" name="message" required></textarea>
         </div>
 
-        <button type="submit" class="submit-btn">Send Message</button>
+        <button type="submit" class="submit-btn fade-in">Send Message</button>
       </form>
         </div>
       </section>
     </div>
 
   <!-- FOOTER SECTION -->
-  <footer class="site-footer">
-  <div class="footer-content">
+  <footer class="site-footer fade-in">
+  <div class="footer-content fade-in">
     <!-- Social Media Links -->
-    <div class="social-links">
-      <a href="https://www.facebook.com/kyll.jspr" target="_blank" rel="noopener noreferrer" class="social-btn">
+    <div class="social-links fade-in">
+      <a href="https://www.facebook.com/kyll.jspr" target="_blank" rel="noopener noreferrer" class="social-btn fade-in">
         <i class="fa-brands fa-facebook-f"></i>
       </a>
-      <a href="https://www.instagram.com/kyll.jspr" target="_blank" rel="noopener noreferrer" class="social-btn">
+      <a href="https://www.instagram.com/kyll.jspr" target="_blank" rel="noopener noreferrer" class="social-btn fade-in">
         <i class="fa-brands fa-instagram"></i>
       </a>
-      <a href="https://www.x.com/kyll_jspr" target="_blank" rel="noopener noreferrer" class="social-btn">
+      <a href="https://www.x.com/kyll_jspr" target="_blank" rel="noopener noreferrer" class="social-btn fade-in">
         <i class="fa-brands fa-x-twitter"></i>
       </a>
-      <a href="https://www.linkedin.com/in/kyllejasperlavilla" target="_blank" rel="noopener noreferrer" class="social-btn">
+      <a href="https://www.linkedin.com/in/kyllejasperlavilla" target="_blank" rel="noopener noreferrer" class="social-btn fade-in">
         <i class="fa-brands fa-linkedin-in"></i>
       </a>
     </div>
     
     <!-- Credits -->
-    <div class="footer-credits">
+    <div class="footer-credits fade-in">
       <p>&copy; 2025 KYLLE JASPER LAVILLA. ALL RIGHTS RESERVED.</p>
 
     </div>
@@ -459,6 +460,45 @@
         });
       }
 
+  document.addEventListener("DOMContentLoaded", function () {
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Nav highlight on scroll
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    function activateNavLink() {
+      const scrollY = window.pageYOffset;
+
+      sections.forEach(section => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 200;
+        const sectionId = section.getAttribute("id");
+
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+          navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${sectionId}`) {
+              link.classList.add("active");
+            }
+          });
+        }
+      });
+    }
+
+    window.addEventListener("scroll", activateNavLink);
+    activateNavLink(); // Trigger on page load
+  });
     </script>
 </body>
 
